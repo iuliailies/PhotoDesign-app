@@ -1,0 +1,127 @@
+body {
+  background-color: #131313ec;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  scroll-behavior: smooth;
+  color: #e8cbc0;
+  overflow-x: hidden;
+}
+
+.main-window {
+  display: flex;
+}
+
+.insta-planner {
+  margin: auto;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1vw;
+  max-width: 800px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.drag-area {
+  width: 30vw;
+  height: 30vw;
+  max-width: 250px;
+  max-height: 250px;
+  margin: auto;
+  background-color: rgba(184, 166, 166, 0.205);
+  border: 2px dashed #e8cbc0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: min(25px, 1.6vw);
+}
+.drag-area header {
+  /* font-size: 1em;
+  width: 25vw;
+  height: 5vh; */
+}
+
+.drag-area span {
+  font-size: 1.2vw;
+  margin: 0.5em 0 0.5em 0;
+}
+
+.drag-area button {
+  width: 20vw;
+  max-width: 220px;
+  height: 8vw;
+  max-height: 70px;
+  padding: 1vw;
+  font-size: 1em;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  background-color: #e8cbc0;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+/* for after adding an image */
+.drag-area img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo-area {
+  margin: auto;
+  width: 30vw;
+  height: 30vw;
+  max-width: 250px;
+  max-height: 250px;
+  background-color: rgba(184, 166, 166, 0.205);
+  border: 2px solid #13100f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  cursor: move;
+  position: relative;
+}
+
+.photo-area img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.photo-area.dragging {
+  opacity: 0.5;
+  border: 2px dashed #13100f;
+}
+
+.drag-transition {
+  transition: all 0.3s ease;
+}
+
+.btn-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  vertical-align: top;
+  z-index: 999;
+  width: 1vw;
+  height: 1vw;
+  background-color: rgba(197, 184, 184, 0.562);
+  opacity: 0.5;
+  border: none;
+  color: black;
+  font-size: 1vw;
+}
+
+.btn-close:hover {
+  background-color: rgba(197, 184, 184, 0.829);
+  cursor: pointer;
+}

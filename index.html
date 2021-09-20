@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="navbar-styles.css">
+    <title>Photo Design</title>
+</head>
+<body>
+    <!-- Navbar section-->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="#home" id="navbar__logo">PHOTO DESIGN</a>
+            <!-- div for the burger sign at the top of the menu -->
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="color.html" class="navbar__links" id="color-wheel-page">Color Wheel</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="insta.html" class="navbar__links" id="insta-feed">Insta Feed</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#inspo" class="navbar__links" id="inspo-page">Inspiration</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="#sign-up" class="button" id="signup">Sign up</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- HomePage Section-->
+    <div class="homepage">
+        <div class="hometext">
+            <h1 class="home-title">Welcome to <br> <span class="title">PHOTO DESIGN</span></h1>
+            <p class="description">Let us be the spark of your inspiration</p>
+        </div>
+    </div>
+
+    <div class="functionalities">
+        <!-- ColorWheel Section-->
+
+        <div class="color-wheel">
+            <div class="polaroid">
+                <img src="./images/wheel.jpg" alt="Wheel" style="width:100%">
+                <div class="container">
+                    <p><span class="title">COLOR WHEEL</span><br> A photographer's best friend when planning a photoshoot</p>
+                    <button onclick="window.location.href = 'color.html'">Try it now</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="insta-planner">
+            <div class="polaroid">
+                <img src="./images/insta-feed2.jpg" alt="Wheel" style="width:100%">
+                <div class="container">
+                    <p><span class="title">INSTA PLANNER</span><br> Plan your insta feed ahead of time, to make it look the best possible</p>
+                    <button onclick="window.location.href = 'insta.html'">Try it now</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+</body>
+
+<script src="app.js"></script>
+</html>

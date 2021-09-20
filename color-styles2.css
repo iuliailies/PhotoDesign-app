@@ -1,0 +1,131 @@
+/* Mobile View */
+
+body {
+  background-color: #131313ec;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  scroll-behavior: smooth;
+  color: #e8cbc0;
+  overflow-x: hidden;
+}
+
+.main-window {
+  content: ""; /* used to center the circle */
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100vw;
+  display: inline-block;
+}
+
+.circle {
+  display: inline-block;
+  margin: 5vh 0;
+}
+
+.color-pair {
+  display: block;
+  position: relative;
+}
+
+.color-indicator,
+.complementary-color {
+  display: inline-block;
+  width: 60vw;
+  min-width: 10vh;
+  height: 10vh;
+  background-color: #fff;
+  border-radius: 20px;
+  vertical-align: middle;
+  margin-bottom: 20px;
+
+  /* center and format text */
+  text-align: center;
+  vertical-align: middle;
+  line-height: 10vh;
+  color: rgba(0, 0, 0, 0.486);
+}
+
+.full-text {
+  margin: 5vw;
+  padding-bottom: 5vh;
+}
+
+p {
+  color: white;
+  margin-bottom: 1vh;
+}
+
+h2 {
+  margin-bottom: 5vh;
+}
+
+.title {
+  font-size: 3em;
+  margin: 3vh 0;
+
+  background-color: #ff8170;
+  background-image: linear-gradient(to top, #4891d6 0%, #f39160 100%);
+  background-size: 100%;
+  /* gradient color text */
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+@media only screen and (min-width: 768px) {
+  .p {
+    line-height: 1.6em;
+  }
+  .text {
+    columns: 2;
+    text-align: left;
+    column-rule-style: solid;
+    column-rule-color: rgb(78, 76, 76);
+  }
+
+  .text > * {
+    margin-top: 0;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .non-text {
+    display: flex;
+    content: "";
+    columns: 2;
+  }
+
+  .color-pair {
+    display: block;
+    margin: auto;
+    padding-top: 5vh;
+  }
+
+  .circle {
+    margin: auto; /* for centering */
+    padding-top: 5vh;
+  }
+
+  .color-indicator,
+  .complementary-color {
+    display: block;
+    width: 50vh;
+    min-width: 10vh;
+    height: 10vh;
+    background-color: #fff;
+    border-radius: 20px;
+    vertical-align: middle;
+    margin-bottom: 20px;
+
+    /* center and format text */
+    text-align: center;
+    vertical-align: middle;
+    line-height: 10vh;
+    color: rgba(0, 0, 0, 0.486);
+  }
+}

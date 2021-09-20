@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #131313;
+  overflow-x: hidden;
+}
+/* NavBar Section */
+
+/* HomePage Section */
+
+.homepage {
+  height: 80vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2em;
+  color: #e8cbc0;
+  background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.7)),
+    url("./images/photo2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* for nice moving effect; image is fixed*/
+}
+
+span {
+  background-color: #ff8170;
+  background-image: linear-gradient(to top, #4891d6 0%, #f39160 100%);
+  background-size: 100%;
+  /* gradient color text */
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+/* Color-Wheel Section */
+
+.color-wheel::before {
+  height: 80vh;
+  align-items: center;
+  display: flex;
+}
+
+/* .text {
+  margin: auto;
+  font-size: 1.3em;
+  background-color: #13131336;
+} */
+
+div.polaroid {
+  width: 50vw;
+  max-width: 500px;
+  height: fit-content;
+  background-color: #131313;
+  box-shadow: 0 4px 8px 0 rgba(243, 240, 240, 0.2),
+    0 6px 20px 0 rgba(211, 206, 206, 0.705);
+  margin: auto;
+  margin-top: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: none;
+  line-height: 2em;
+}
+
+.title {
+  font-size: 2em;
+}
+.container > p {
+  color: #e8cbc0;
+}
+
+button {
+  background-color: #e8cbc0;
+  height: 50px;
+  width: 40vw;
+  max-width: 450px;
+  margin-top: 10px;
+}
+button:hover {
+  background-color: #636fa4;
+  transition: all 0.6s ease;
+}
+
+.functionalities {
+  display: block; /* mobile friendly */
+}
+
+@media only screen and (min-width: 1100px) {
+  .functionalities {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  div.polaroid {
+    margin: 5vh 2vw 5vh 2vw;
+  }
+}
